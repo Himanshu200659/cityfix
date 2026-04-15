@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CityFix – Municipal Problem Reporting & Resolution</title>
+  <meta name="description" content="CityFix is a smart civic platform to report, track, and resolve municipal issues like potholes, garbage, water leakage, and streetlight problems in your city." />
+  <meta name="keywords" content="municipal complaints, city fix, smart city, report problem, civic platform" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <link rel="stylesheet" href="src/styles/pages.css" />
+  <link rel="stylesheet" href="src/styles/responsive.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="logo-icon">🏙️</span>
+        <span class="logo-text">CityFix</span>
+      </div>
+      <div class="loader-spinner">
+        <div class="spinner"></div>
+      </div>
+      <p class="loader-msg">Building a smarter city...</p>
+    </div>
+  </div>
+
+  <!-- Main App Container -->
+  <div id="app"></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- App Scripts -->
+  <script src="src/firebase.js"></script>
+  <script src="src/utils/helpers.js"></script>
+  <script src="src/utils/auth.js"></script>
+  <script src="src/utils/db.js"></script>
+  <script src="src/utils/admin-session.js"></script>
+  <script src="src/components/toast.js"></script>
+  <script src="src/components/modal.js"></script>
+  <script src="src/components/navbar.js"></script>
+  <script src="src/components/footer.js"></script>
+  <script src="src/components/sidebar.js"></script>
+  <script src="src/pages/home.js"></script>
+  <script src="src/pages/about.js"></script>
+  <script src="src/pages/login.js"></script>
+  <script src="src/pages/register.js"></script>
+  <script src="src/pages/dashboard.js"></script>
+  <script src="src/pages/submit-complaint.js"></script>
+  <script src="src/pages/complaint-status.js"></script>
+  <script src="src/pages/admin-login.js"></script>
+  <script src="src/pages/admin.js"></script>
+  <script src="src/pages/information.js"></script>
+  <script src="src/pages/contact.js"></script>
+  <script src="src/pages/faq.js"></script>
+  <script src="src/router.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
